@@ -21,8 +21,9 @@ function testes(){
         y=b.length
         c=0
         while(c<=y-1){
-            const v = b.split('')
-            console.log(v)          
+            const frase = b.split('')
+            
+            console.log(frase)          
                 
            
             
