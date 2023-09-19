@@ -8,6 +8,6 @@ function ativarLetra(elemento){
     });
 }
 
-const titulo = document.querySelector('.digitarUm');
+const titulo = document.querySelector('.digitando');
 ativarLetra(titulo);
 
