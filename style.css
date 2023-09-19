@@ -46,6 +46,7 @@ header .navegacao-primaria li a{
 /*continuação 18.09.2023
  DOWNLOAD CV SECAO*/
  .section-div{
+    animation: inicializar .6s forwards;
     background-color: #000;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -54,14 +55,19 @@ header .navegacao-primaria li a{
     gap: 60px;
     padding: 60px;
  }
+ 
+    
+    
+ 
  /*esse não tinha na aula*/
  .section-div img{
     max-width: 100%;
  }
+ 
  .section-div div{
     margin-top: 120px;
     align-self: start;
-    display: grid;
+    display:grid;
     gap: 30px;
  }
  .section-div div h2{
@@ -69,6 +75,9 @@ header .navegacao-primaria li a{
     font-weight: 600;
     color: #f7f7f7;
  }
+ 
+
+ 
  .section-div div p{
     font-family: 'Poppins';
     font-weight: 200;
@@ -81,5 +90,15 @@ header .navegacao-primaria li a{
     border-radius: 5px;
     border: 2px solid #fff;
     text-align: center;
+ }
+ @keyframes inicializar{
+    from{
+       opacity: 0;
+       transform: translate3d(0,-60px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
  }
 

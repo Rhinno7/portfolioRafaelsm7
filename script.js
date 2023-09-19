@@ -1,11 +1,13 @@
 function ativarLetra(elemento){
     const arrTexto = elemento.innerHTML.split('');
     elemento.innerHTML = "";
-    arrTexto.array.forEach((letra,i) => {
+    arrTexto.forEach((letra,i) => {
         setTimeout(()=>{
             elemento.innerHTML +=letra;
-        })
-        
+        },75*i);
     });
 }
-const titulo = document.querySelector('.digitando');
+
+const titulo = document.querySelector('.digitarUm');
+ativarLetra(titulo);
+
