@@ -1,4 +1,5 @@
-const textos = ['Web Developer','Backend Developer'];
+const textos = ' Backend Developer';
+const textosDois = ' Web Developer';
 function ativarLetra(elemento){
     const arrTexto = elemento.innerHTML.split('');
     elemento.innerHTML = "";
@@ -13,25 +14,22 @@ const titulo = document.querySelector('.digitando');
 ativarLetra(titulo);
 
 /*FUNÇÃO PARA TESTES 19.09.2023*/
-function testes(){
-    const x = textos.length
-    i=0
-    while(i<=x-1){
-        b=textos[i]
-        y=b.length
-        c=0
-        while(c<=y-1){
-            const frase = b.split('')
-            
-            console.log(frase)          
-                
-           
-            
-            c++
-        }
-        /*console.log(textos[i].split(''))*/
-       i++ 
-    }
+function testes(elemento){
+    elemento.innerHTML="";
+    const txt = textos.split('');
+    const txtDois = textosDois.split('');
+    txt.forEach((letra,i)=>{
+        setTimeout(()=>{
+            elemento.innerHTML+=letra;
+        },75*i);
+    })
+
+
     
+     
 }
+const tt = document.querySelector('.testsT');
+testes(tt);
+    
+
 
