@@ -14,6 +14,8 @@ const titulo = document.querySelector('.digitando');
 ativarLetra(titulo);
 
 /*FUNÇÃO PARA TESTES 19.09.2023*/
+// TESTE PARA O EFEITO DE DGITAÇÃO 25.09.2023
+
 function testes(elemento){
     //elemento.innerHTML="";
     const txt = textos.split('');
