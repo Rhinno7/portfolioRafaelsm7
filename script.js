@@ -1,5 +1,10 @@
-const textos = ' Backend Developer';
-const textosDois = ' Web Developer';
+const digitar = document.querySelector(".escrevendo");
+const cursor = document.querySelector(".cursor");
+const textos = ["developer back-end","developer Web front-end"]
+
+const digitandoAtraso = 200, apagandoAtraso = 100, novoAtrasoTexto = 2000;
+
+
 /*function ativarLetra(elemento){
     const arrTexto = elemento.innerHTML.split('');
     elemento.innerHTML = "";
@@ -16,7 +21,7 @@ ativarLetra(titulo);
 /*FUNÇÃO PARA TESTES 19.09.2023*/
 // TESTE PARA O EFEITO DE DGITAÇÃO 25.09.2023
 
-function testes(elemento){
+/*  function testes(elemento){
     //elemento.innerHTML="";
     const txt = textos.split('');
     const txtDois = textosDois.split('');
@@ -34,6 +39,8 @@ function testes(elemento){
             elemento.innerHTML+=letrass;
         },75*ii);
     })
+
+    */
     //elemento.innerHTML=xxx
     /*const complet = elemento.innerHTML
     const numTextos = textos.length
@@ -54,9 +61,9 @@ function testes(elemento){
 
     
      
-}
-const tt = document.querySelector('.testsT');
-testes(tt);
+
+
+
     
 
 
