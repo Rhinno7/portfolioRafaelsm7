@@ -2,7 +2,40 @@ const digitar = document.querySelector(".escrevendo");
 const cursor = document.querySelector(".cursor");
 const textos = ["developer back-end","developer Web front-end"]
 
-const digitandoAtraso = 200, apagandoAtraso = 100, novoAtrasoTexto = 2000;
+const digitandoAtraso = 50, apagandoAtraso = 80, novoAtrasoTexto = 1500;
+
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+    if (charIndex < textos[textArrayIndex].length) {
+      if(!cursor.classList.contains("typing")) cursor.classList.add("typing");
+      digitar.textContent += textos[textArrayIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(type, digitandoAtraso);
+    } 
+    else {
+      cursor.classList.remove("typing");
+      setTimeout(erase, novoAtrasoTexto);
+    }
+  }
+  function erase() {
+    if (charIndex > 0) {
+      if(!cursor.classList.contains("typing")) cursor.classList.add("typing");
+      digitar.textContent = textos[textArrayIndex].substring(0, charIndex-1);
+      charIndex--;
+      setTimeout(erase, apagandoAtraso);
+    } 
+    else {
+      cursor.classList.remove("typing");
+      textArrayIndex++;
+      if(textArrayIndex>=textos.length) textArrayIndex=0;
+      setTimeout(type, digitandoAtraso + 1100);
+    }
+  }
+  document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+    if(textos.length) setTimeout(type, novoAtrasoTexto + 250);
+  });
 
 
 /*function ativarLetra(elemento){

@@ -63,6 +63,7 @@ header .navegacao-primaria li a{
  .section-div img{
     max-width: 100%;
  }
+
  
  .section-div div{
     margin-top: 100px;
@@ -91,6 +92,15 @@ header .navegacao-primaria li a{
     border: 2px solid #fff;
     text-align: center;
  }
+
+ .section-div div h2 span.escrevendo{
+    display: inline-block;
+    background-color: #fff;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: none;
+ }
+ 
  @keyframes inicializar{
     from{
        opacity: 0;
