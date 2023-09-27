@@ -1,8 +1,8 @@
 const digitar = document.querySelector(".escrevendo");
 const cursor = document.querySelector(".cursor");
-const textos = ["developer back-end","developer Web front-end"]
+const textos = ["developer Back-end","developer Web Front-end"]
 
-const digitandoAtraso = 50, apagandoAtraso = 80, novoAtrasoTexto = 1500;
+const digitandoAtraso = 70, apagandoAtraso = 100, novoAtrasoTexto = 1500;
 
 let textArrayIndex = 0;
 let charIndex = 0;

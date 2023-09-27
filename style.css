@@ -93,14 +93,31 @@ header .navegacao-primaria li a{
     text-align: center;
  }
 
- .section-div div h2 span.escrevendo{
-    display: inline-block;
-    background-color: #fff;
-    margin-left: 0.1rem;
-    width: 3px;
-    animation: none;
- }
- 
- 
+ .escrevendo::after{
+     content: '|';
+     margin-left: 5px;
+     opacity: 1;
+     animation: pisca .5s infinite;
+    }
+    @keyframes inicializar{
+    from{
+           opacity: 0;
+           transform: translate3d(0,-60px,0);
+       }
+       to{
+           opacity: 1;
+           transform: translate3d(0,0,0);        
+        }
+    }
+       
+    @keyframes pisca{
+        from{
+               opacity: 1;
+            }
+           to{
+               opacity: 0;       
+            }
+        }
+           
  
 
