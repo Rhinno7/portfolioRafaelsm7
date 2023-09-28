@@ -119,6 +119,11 @@ header .navegacao-primaria li a{
                opacity: 0;       
             }
         }
+        /* SEÇAO PRINCIPAL SOBRE MIM 27.09.23 */
+
+        main{
+            background-color: #111;
+        }
            
  
 
