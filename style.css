@@ -262,6 +262,12 @@ header .navegacao-primaria li a{
                 transform: translate3d(0,0,0);
             }
         }
+        /* SITE RESPONSIVO 03.10.2023 */
+        /* Depois vamos criar outra pagina só com os responsivos */
+        
+        @media(max-width: 992px){
+
+        }
                    
  
 
