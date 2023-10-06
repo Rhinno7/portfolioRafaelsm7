@@ -1,0 +1,32 @@
+.section-div img{
+    display: none;
+}
+.section-div{
+    background-image: url(/image/perfil/fotoPrincipalPortfolioAlt.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    
+}
+header .navegacao-primaria{
+    display: none;
+}
+header i{
+    color: #fff;
+    font-size: 2rem;
+    margin: 1rem;
+}
+header h1{
+    font-size: 2.5rem;
+   text-align: center;
+    
+}
+.section-div{
+    grid-template-columns: none;
+    gap: 20px;
+    padding: 20px;
+    /* align-items: center; */
+}
+.section-div div{
+    margin-top: 1px;
+    text-align: center;
+}
